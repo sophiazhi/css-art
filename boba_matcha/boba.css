@@ -7,7 +7,7 @@ body {
     margin: auto;
     display: flex;
     width: 300px;
-    height: 450px;
+    height: 500px;
     flex-direction: column;
   }
   
@@ -33,6 +33,7 @@ body {
     border-radius: 30px;
     border-bottom-left-radius: 120px;
     border-bottom-right-radius: 120px;
+    overflow: hidden;
   }
   
   .face {
@@ -79,4 +80,22 @@ body {
     border-bottom: 2px solid #bedebd;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
+  }
+  
+  .toppings {
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    //border: 1px solid transparent;
+  }
+  
+  .tapioca {
+    width: 40px;
+    height: 40px;
+    background: #422403;
+    margin: 5px;
+    border-radius: 50%;
   }
