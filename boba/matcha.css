@@ -1,5 +1,13 @@
+:root {
+  --background-color: #e0c9f5;
+  --drink-color: #9bd698;
+  --face-color: #6da86a;
+  --tapioca-color: #422403;
+  --tapioca-shadow: #42240380;
+}
+
 body {
-  background: #e0c9f5;
+  background: var(--background-color);
 }
 
 .box{
@@ -24,7 +32,7 @@ body {
   top: 23%;
   height: 77%;
   width: 100%;
-  background: #9bd698;
+  background: var(--drink-color);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -61,7 +69,7 @@ body {
   position: relative;
   width: 20px;
   height: 20px;
-  background: #6da86a;
+  background: var(--face-color);
   border-radius: 50%;
 }
 
@@ -83,8 +91,8 @@ body {
   height: 50px;
   background: transparent;
   border-radius: 50%;
-  border: 4px solid #6da86a;
-  border-color: transparent transparent #6da86a transparent;
+  border: 4px solid var(--face-color);
+  border-color: transparent transparent var(--face-color) transparent;
 }
 
 .mouth:before {
@@ -95,7 +103,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6da86a;
+  background: --var(face-color);
 }
 
 .mouth:after {
@@ -106,7 +114,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6da86a;
+  background: --var(face-color);
 }
 
 .toppings {
@@ -116,13 +124,13 @@ body {
   align-content: space-around;
   flex-wrap: wrap;
   justify-content: center;
-  box-shadow: 0 -100px 15px -15px #42240380 inset;
+  box-shadow: 0 -100px 15px -15px var(--tapioca-shadow) inset;
 }
 
 .tapioca {
   width: 40px;
   height: 40px;
-  background: #422403;
+  background: var(--tapioca-color);
   margin: 5px;
   border-radius: 50%;
 }
