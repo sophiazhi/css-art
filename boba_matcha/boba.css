@@ -1,0 +1,76 @@
+body {
+    background: #e0c9f5;
+  }
+  
+  .box{
+    position: relative;
+    margin: auto;
+    display: flex;
+    width: 300px;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    /*optional background or border
+    background: white;
+    border: solid 4px red;*/
+  }
+  
+  .cup{
+    position: absolute;
+    top: 30%;
+    height: 70%;
+    width: 100%;
+    background: #9bd698;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 30px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+  }
+  
+  /* Face elements borrowed from https://codepen.io/cassidoo/pen/QJmxWX?editors=1100 */
+  .face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 58px;
+  }
+  
+  .eyes {
+    display: flex;
+    justify-content: space-between;
+    width: 145px;
+  }
+  
+  .eye {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    background: #6da86a;
+    border-bottom: 2px solid #bedebd;
+    border-radius: 100%;
+  }
+  
+  .eye::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 100%;
+  }
+  .mouth {
+    width: 75px;
+    height: 25px;
+    background: #6da86a;
+    border-radius: 10px;
+    border-bottom: 2px solid #bedebd;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
