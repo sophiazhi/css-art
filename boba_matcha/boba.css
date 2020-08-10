@@ -56,7 +56,6 @@ body {
     width: 18px;
     height: 18px;
     background: #6da86a;
-    border-bottom: 2px solid #bedebd;
     border-radius: 100%;
   }
   
@@ -72,14 +71,37 @@ body {
     background: #fff;
     border-radius: 100%;
   }
+  
   .mouth {
-    width: 75px;
-    height: 25px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    border: 4px solid #6da86a;
+    border-color: transparent transparent #6da86a transparent;
+  }
+  
+  .mouth:before {
+    content: '';
+    position: absolute;
+    top: 85%;
+    left: 4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
     background: #6da86a;
-    border-radius: 10px;
-    border-bottom: 2px solid #bedebd;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+  }
+  
+  .mouth:after {
+    content: '';
+    position: absolute;
+    top: 85%;
+    right: 4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #6da86a;
   }
   
   .toppings {
