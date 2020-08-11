@@ -10,16 +10,16 @@
     --tapioca-shadow: #42240380;
   }
   
-  body {
-    background: var(--background-color);
-  }
-  
   .container {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
   }
-
+/*
+  body {
+    background: var(--background-color);
+  }
+  
   .box{
     position: relative;
     margin: auto;
@@ -144,6 +144,7 @@
     margin: 5px;
     border-radius: 50%;
   }
+  */
 
   .original-drink {
       background: var(--original-drink-color);
