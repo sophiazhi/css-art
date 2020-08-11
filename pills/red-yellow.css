@@ -1,0 +1,115 @@
+:root {
+    --background-color: #d2f2fa;
+    --face-color: #9c9c9c;
+    --pill-left: #ffa6a6;
+    --pill-right: #fffea6;
+  }
+  
+  body {
+    background: var(--background-color);
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .box {
+    position: relative;
+    top: 100px;
+    width: 500px;
+    height: 250px;
+    margin: auto;
+    transform: rotate(-30deg);
+  }
+  
+  .pill {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 125px;
+    overflow: hidden;
+    background: linear-gradient(90deg, var(--pill-left) 50%, var(--pill-right) 50%);
+  }
+  
+  .pill:after {
+    content: '';
+    position: absolute;
+    top: 70%;
+    background: #fff2;
+    width: inherit;
+    height: 10%;
+  }
+  
+  .face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 58px;
+  }
+  
+  .eyes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 145px;
+  }
+  
+  .eye {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: var(--face-color);
+    border-radius: 50%;
+  }
+  
+  .eye::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  
+  .mouth {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: transparent transparent var(--face-color) transparent;
+  }
+  
+  .frown {
+    transform: rotate(180deg) translateY(-40px);
+  }
+  
+  .mouth:before {
+    content: '';
+    position: absolute;
+    top: 85%;
+    left: 4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--face-color);
+  }
+  
+  .mouth:after {
+    content: '';
+    position: absolute;
+    top: 85%;
+    right: 4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--face-color);
+  }
+  
