@@ -1,0 +1,168 @@
+:root {
+    --background-color: #fff3ad;
+    --drink-color: #9bd698;
+    --face-color: #6da86a;
+    --taro-drink-color: #e0c9f5;
+    --taro-face-color: #c4a4e2;
+    --original-drink-color: #dec3a2;
+    --original-face-color: #be9f79;
+    --tapioca-color: #422403;
+    --tapioca-shadow: #42240380;
+  }
+  
+  body {
+    background: var(--background-color);
+  }
+  
+  .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  .box{
+    position: relative;
+    margin: auto;
+    width: 300px;
+    height: 500px;
+  }
+  
+  .straw {
+    position: absolute;
+    left: 10%;
+    width: 20%;
+    height: 23%;
+    background: #ffffff80;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+  }
+  
+  .cup{
+    position: absolute;
+    top: 23%;
+    height: 77%;
+    width: 100%;
+    background: var(--drink-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 30px 30px 120px 120px;
+    overflow: hidden;
+  }
+  
+  .cup:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 75%;
+    width: 30px;
+    background: #fff2;
+    height: 385px;
+  }
+  
+  .face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 58px;
+  }
+  
+  .eyes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 145px;
+  }
+  
+  .eye {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: var(--face-color);
+    border-radius: 50%;
+  }
+  
+  .eye::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  
+  .mouth {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: transparent transparent var(--face-color) transparent;
+  }
+  
+  .mouth:before {
+    content: '';
+    position: absolute;
+    top: 85%;
+    left: 4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--face-color);
+  }
+  
+  .mouth:after {
+    content: '';
+    position: absolute;
+    top: 85%;
+    right: 4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--face-color);
+  }
+  
+  .toppings {
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 -100px 15px -15px var(--tapioca-shadow) inset;
+  }
+  
+  .tapioca {
+    width: 40px;
+    height: 40px;
+    background: var(--tapioca-color);
+    margin: 5px;
+    border-radius: 50%;
+  }
+
+  .original-drink {
+      background: var(--original-drink-color);
+  }
+
+  .taro-drink {
+      background: var(--taro-drink-color);
+  }
+
+  .original-mouth {
+      border-color: transparent transparent var(--original-face-color) transparent;
+  }
+  .original-eye, .original-mouth::after, .original-mouth::before {
+      background: var(--original-face-color);
+  }
+
+  .taro-mouth {
+      border-color: transparent transparent var(--taro-face-color) transparent;
+  }
+  .taro-eye, .taro-mouth::after, .taro-mouth::before {
+      background: var(--taro-face-color);
+  }
